@@ -1,0 +1,644 @@
+:root {
+    --green-color:rgb(39, 250, 102);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #fff;
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 17px;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    background-image: url('images/image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.background-div {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    position: relative;
+}
+
+
+.conti {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.service {
+    display: block;
+    width: 70%;
+    height: 500px;
+    padding: 0 5% 0 5%;
+    ;
+}
+.try {
+    display: block;
+    width: 70%;
+    height: 500px;
+    padding: 0 5% 0 5%;
+    margin-right: 5%;
+    background: rgb(0, 0, 0, 0.8);
+}
+
+.service > button {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 0;
+    position: relative;
+}
+
+.service > button:hover {
+    background-color: var(--green-color);
+    transition: ease .5s;
+}
+
+.service > button:hover > span {
+    background-color: #000;
+    color: #fff;
+    transition: ease .5s;
+
+}
+
+
+.service > button > span {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    background-color: var(--green-color);
+    bottom: 5px;
+    right: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.service > button > span > h4 {
+    align-items: center;
+    margin: 16px;
+}
+
+.try > h2 {
+    margin-top: 60px;
+}
+
+.try > button {
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: var(--green-color);
+    border: 0;
+    position: relative;
+}
+
+.try > button:hover {
+    background-color: #fff;
+    transition: ease .5s;
+}
+
+.try > button:hover > span {
+    border: none;
+    background-color: var(--green-color);
+    color: #000;
+    transition: ease .5s;
+}
+
+.try > button:hover > span > h4 {
+    color: #000;
+    transition: ease .5s;
+}
+
+
+.try > button > span {
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    background-color: #000;
+    bottom: 5px;
+    right: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--green-color);
+}
+
+.try > button > span > h4 {
+    align-items: center;
+    margin: 16px;
+    color: #fff;
+}
+
+.container2 {
+    display: block;
+}
+
+#offers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:10% ;
+    margin-bottom: 10%;
+}
+
+#offers > li {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#offers > li > div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--green-color);
+    position: relative;
+    margin: 0 150px 0 150px;
+}
+
+#offers > li > div > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+
+#offers > li > h4 {
+    font-size: 30
+    px;
+    color: var(--green-color);
+}
+
+#offers > li > p {
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(0,0,0);
+
+}
+
+#box3,
+#box6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 80vh;
+}
+
+.box {
+    height: 60vh;
+}
+
+.box > .backdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#box1 {
+    background-image: url(images/image1.jpg);
+    background-size: cover;
+}
+
+#box2 {
+    background-image: url(images/image2.jpg);
+    background-size: cover;
+}
+
+#box3 {
+    background-image: url(images/image3.jpg);
+    background-size: cover;
+}
+#box4 {
+    background-image: url(images/image4.jpg);
+    background-size: cover;
+}
+#box5 {
+    background-image: url(images/image5.jpg);
+    background-size: cover;
+}
+#box6 {
+    background-image: url(images/image6.jpg);
+    background-size: cover;
+}
+
+
+.box > .backdiv > h1 {
+    color: var(--green-color);
+}
+
+.box > .backdiv > h3 {
+    width: 300px;
+    text-align: center;
+}
+
+.box > .backdiv > p {
+    width: 400px;
+    text-align: center;
+}
+
+#form-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/last-image.jpg);
+    background-size: cover;
+}
+
+.form-div {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-div > img { 
+    width: 43%;
+    height: 800px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+}
+
+.form-div > #form {
+    width: 50%;
+    height: 800px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.form-div > #form > h4 {
+    margin-bottom: 0px;
+    margin-top: 60px;
+}
+
+.form-div > #form > h1 {
+    margin-top: 0px;
+    line-height: 90px;
+    font-size: 60px;
+    width: 400px;
+
+}
+
+.form-div > #form > P {
+    width: 400px;
+}
+
+.form-div > #form > .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.form-div > #form > .contact-info > p {
+    width: 45%;
+
+}
+
+
+.form-div > #form > form {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    
+}
+
+.form-div > #form > form > input {
+    height: 50px;
+    font-size: 16px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(109, 109, 109);
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.form-div > #form > form > #subject {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.form-div > #form > form > #message {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-bottom: 100px;
+}
+
+.form-div > #form > form > button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 50px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: fff;
+    border: 0;
+    position: relative;
+}
+
+.form-div > #form > form > button > span {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    background-color: var(--green-color);
+    bottom: 5px;
+    right: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form-div > #form > form > button > span > h4 {
+    align-items: center;
+    margin: 16px;
+    color: #000;
+}
+
+.form-div > #form > form > button:hover {
+    background-color: var(--green-color);
+    transition: ease 1s;
+}
+
+.form-div > #form > form > button:hover > span {
+    background-color: #000;
+    transition: ease 0.5s;
+}
+
+.form-div > #form > form > button:hover > span > h4 {
+    color: #fff;
+    transition: ease .5s;
+}
+
+@media(max-width: 800px) {
+    h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    
+    .container1 {
+        background-image: url('images/image.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        height: 80vh;
+
+    }
+
+    .conti {
+        display: flex;
+        position: none;
+        bottom: 0;
+        margin-left: 15%;
+        margin-right: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .background-div {
+        background: rgba(0, 0, 0, 0.5);
+        height: 80vh;
+        position: relative;
+    }
+    
+    
+    .conti {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        margin-left: 15%;
+        margin-right: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .service {
+        display: block;
+        width: 70%;
+        height: 300px;
+        padding: 0 100px 0 70px;
+        ;
+    }
+    .try {
+        display: block;
+        width: 70%;
+        height: 300px;
+        padding:0 100px 100px 70px;
+        background: rgb(0, 0, 0, 0.8);
+    }
+
+    #offers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:15% ;
+    }
+    
+    #offers > li {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+    #offers > li > h4{
+        font-size: 25px;
+    }
+
+
+    #box1,
+    #box2,
+    #box3,
+    #box4,
+    #box5,
+    #box6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 400px;
+    }
+
+    .form-div > img {
+        display: none;
+    }
+
+    #form-container {
+        height: 1000px;
+    }
+
+    
+}
+
+@media(max-width: 700px) {
+
+    
+    
+}
+
+@media(max-width: 500px) {
+
+
+    .service,
+    .try {
+        width: 300px;
+        padding: 0 0 0 20px;
+    }
+
+    .try  > button {
+        width: 300px;
+    }
+
+    .try  > button > span {
+        width: 300px;
+    }
+
+
+
+    #offers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:15% ;
+    }
+    
+    #offers > li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+    #form-container {
+        height: 1000px;
+    }
+    
+    .form-div > #form {
+        width: 100%;
+        padding-left:auto 20% ;
+    }
+    
+    .form-div > #form > h4 {
+        margin-bottom: 0px;
+        margin-top: 60px;
+    }
+    
+    .form-div > #form > h1 {
+        margin-top: 0px;
+        line-height: 90px;
+        font-size: 60px;
+        width: 300px;
+    
+    }
+
+    .form-div > #form > .contact-info {
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .form-div > #form > .contact-info > p {
+        width: 300px;
+        align-items: flex-start;
+    }
+    
+    .form-div > #form > P {
+        width: 300px;
+    }
+
+    .form-div > #form > form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+
+    }
+    
+    .form-div > #form > form > button {
+        width: 300px;
+    }
+    
+    .form-div > #form > form > button > span {
+        width: 300px;
+    }
+    
+    
+    .form-div > #form > form > button > span > h4 {
+        margin: 16px;
+    }
+    
+}
