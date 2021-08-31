@@ -59,8 +59,8 @@ p {
     display: flex;
     position: absolute;
     bottom: 0;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     justify-content: center;
 }
@@ -69,14 +69,15 @@ p {
     display: block;
     width: 70%;
     height: 500px;
-    padding: 0 100px 0 70px;
+    padding: 0 5% 0 5%;
     ;
 }
 .try {
     display: block;
     width: 70%;
     height: 500px;
-    padding:0 100px 0 70px;
+    padding: 0 5% 0 5%;
+    margin-right: 5%;
     background: rgb(0, 0, 0, 0.8);
 }
 
@@ -176,25 +177,23 @@ p {
 }
 
 .container2 {
-    height: 40vh;
     display: block;
 }
 
 #offers {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-top:10% ;
+    margin-bottom: 10%;
 }
 
 #offers > li {
-    width: 300px;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;;
+    justify-content: center;
 }
 
 #offers > li > div {
@@ -217,7 +216,8 @@ p {
 }
 
 #offers > li > h4 {
-    font-size: 35px;
+    font-size: 30
+    px;
     color: var(--green-color);
 }
 
@@ -307,24 +307,26 @@ p {
 .form-div {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
 .form-div > img { 
-    width: 600px;
+    width: 43%;
     height: 800px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-left: 150px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
 }
 
 .form-div > #form {
-    width: 600px;
+    width: 50%;
     height: 800px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-left: 0px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 
@@ -336,21 +338,30 @@ p {
 .form-div > #form > h1 {
     margin-top: 0px;
     line-height: 90px;
+    font-size: 60px;
+    width: 400px;
 
+}
+
+.form-div > #form > P {
+    width: 400px;
 }
 
 .form-div > #form > .contact-info {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 400px;
 }
 
 .form-div > #form > .contact-info > p {
-    width: 300px;
+    width: 45%;
+
 }
 
+
 .form-div > #form > form {
-    width: 600px;
+    width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
@@ -382,7 +393,7 @@ p {
     grid-column-start: 1;
     grid-column-end: 3;
     height: 50px;
-    width: 580;
+    width: 400px;
     margin-top: 20px;
     margin-left: 5px;
     font-weight: bold;
@@ -394,7 +405,7 @@ p {
 }
 
 .form-div > #form > form > button > span {
-    width: 590px;
+    width: 400px;
     height: 50px;
     position: absolute;
     background-color: var(--green-color);
@@ -424,4 +435,210 @@ p {
 .form-div > #form > form > button:hover > span > h4 {
     color: #fff;
     transition: ease .5s;
+}
+
+@media(max-width: 800px) {
+    h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    
+    .container1 {
+        background-image: url('images/image.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        height: 80vh;
+
+    }
+
+    .conti {
+        display: flex;
+        position: none;
+        bottom: 0;
+        margin-left: 15%;
+        margin-right: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .background-div {
+        background: rgba(0, 0, 0, 0.5);
+        height: 80vh;
+        position: relative;
+    }
+    
+    
+    .conti {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        margin-left: 15%;
+        margin-right: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .service {
+        display: block;
+        width: 70%;
+        height: 300px;
+        padding: 0 100px 0 70px;
+        ;
+    }
+    .try {
+        display: block;
+        width: 70%;
+        height: 300px;
+        padding:0 100px 100px 70px;
+        background: rgb(0, 0, 0, 0.8);
+    }
+
+    #offers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:15% ;
+    }
+    
+    #offers > li {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+    #offers > li > h4{
+        font-size: 25px;
+    }
+
+
+    #box1,
+    #box2,
+    #box3,
+    #box4,
+    #box5,
+    #box6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 400px;
+    }
+
+    .form-div > img {
+        display: none;
+    }
+
+    #form-container {
+        height: 1000px;
+    }
+
+    
+}
+
+@media(max-width: 700px) {
+
+    
+    
+}
+
+@media(max-width: 500px) {
+
+
+    .service,
+    .try {
+        width: 300px;
+        padding: 0 0 0 20px;
+    }
+
+    .try  > button {
+        width: 300px;
+    }
+
+    .try  > button > span {
+        width: 300px;
+    }
+
+
+
+    #offers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:15% ;
+    }
+    
+    #offers > li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+    #form-container {
+        height: 1000px;
+    }
+    
+    .form-div > #form {
+        width: 100%;
+        padding-left:auto 20% ;
+    }
+    
+    .form-div > #form > h4 {
+        margin-bottom: 0px;
+        margin-top: 60px;
+    }
+    
+    .form-div > #form > h1 {
+        margin-top: 0px;
+        line-height: 90px;
+        font-size: 60px;
+        width: 300px;
+    
+    }
+
+    .form-div > #form > .contact-info {
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .form-div > #form > .contact-info > p {
+        width: 300px;
+        align-items: flex-start;
+    }
+    
+    .form-div > #form > P {
+        width: 300px;
+    }
+
+    .form-div > #form > form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+
+    }
+    
+    .form-div > #form > form > button {
+        width: 300px;
+    }
+    
+    .form-div > #form > form > button > span {
+        width: 300px;
+    }
+    
+    
+    .form-div > #form > form > button > span > h4 {
+        margin: 16px;
+    }
+    
 }
